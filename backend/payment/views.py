@@ -2,9 +2,10 @@ import stripe
 from django.conf import settings
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
-from .models import Order
+from .models import Order, OrderItem
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
+
 
 @api_view(["POST"])
 def create_checkout_session(request):
@@ -42,6 +43,15 @@ def create_checkout_session(request):
         payment_status="pending"
     )
 
+    for item in items:
+        OrderItem.objects.create(
+            order=order,
+            product_name=item["Title"],
+            category=item.get("Category", ""),
+            price=item["Price"],
+            quantity=item.get("quantity", 1)
+        )
+
     session = stripe.checkout.Session.create(
         payment_method_types=["card"],
         line_items=line_items,
@@ -55,6 +65,7 @@ def create_checkout_session(request):
 
     return Response({"url": session.url})
 
+
 @api_view(["POST"])
 def cod_order(request):
 
@@ -66,7 +77,7 @@ def cod_order(request):
     for item in items:
         total += float(item["Price"]) * item.get("quantity", 1)
 
-    Order.objects.create(
+    order = Order.objects.create(
         name=customer["name"],
         email=customer["email"],
         phone=customer["phone"],
@@ -76,7 +87,17 @@ def cod_order(request):
         payment_status="cod"
     )
 
+    for item in items:
+        OrderItem.objects.create(
+            order=order,
+            product_name=item["Title"],
+            category=item.get("Category", ""),
+            price=item["Price"],
+            quantity=item.get("quantity", 1)
+        )
+
     return Response({"success": True})
+
 
 @api_view(["POST"])
 def verify_payment(request):
