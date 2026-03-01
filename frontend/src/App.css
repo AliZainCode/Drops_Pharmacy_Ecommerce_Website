@@ -1,0 +1,10 @@
+@import "tailwindcss";
+*{
+    font-family: "DM Sans", "sans-serif";
+    margin-left: 0;
+
+
+}
+.navbar_border_hover:hover{
+    border-bottom: 1px solid black;
+}
