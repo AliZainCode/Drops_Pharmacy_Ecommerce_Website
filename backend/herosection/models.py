@@ -1,6 +1,5 @@
 from django.db import models
 
-
 class HeroSection(models.Model):
     image = models.URLField(max_length=2000)
     category = models.CharField(max_length=200, default="hero")

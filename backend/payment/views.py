@@ -1,38 +1,3 @@
-# import stripe
-# from django.conf import settings
-# from rest_framework.decorators import api_view
-# from rest_framework.response import Response
-
-# stripe.api_key = settings.STRIPE_SECRET_KEY
-
-
-# @api_view(["POST"])
-# def create_checkout_session(request):
-#     items = request.data.get("items", [])
-
-#     line_items = []
-
-#     for item in items:
-#         line_items.append({
-#             "price_data": {
-#                 "currency": "aed",
-#                 "product_data": {
-#                     "name": item["Title"],
-#                 },
-#                 "unit_amount": int(float(item["Price"]) * 100),
-#             },
-#             "quantity": item.get("quantity", 1),
-#         })
-
-#     session = stripe.checkout.Session.create(
-#         payment_method_types=["card"],
-#         line_items=line_items,
-#         mode="payment",
-#         success_url="http://localhost:5173/products",
-#         cancel_url="http://localhost:5173/payment-cancel",
-#     )
-
-#     return Response({"url": session.url})
 import stripe
 from django.conf import settings
 from rest_framework.decorators import api_view
@@ -40,7 +5,6 @@ from rest_framework.response import Response
 from .models import Order
 
 stripe.api_key = settings.STRIPE_SECRET_KEY
-
 
 @api_view(["POST"])
 def create_checkout_session(request):
@@ -68,7 +32,6 @@ def create_checkout_session(request):
             "quantity": qty,
         })
 
-    # create order but keep pending
     order = Order.objects.create(
         name=customer["name"],
         email=customer["email"],
@@ -91,6 +54,7 @@ def create_checkout_session(request):
     order.save()
 
     return Response({"url": session.url})
+
 @api_view(["POST"])
 def cod_order(request):
 
@@ -113,6 +77,7 @@ def cod_order(request):
     )
 
     return Response({"success": True})
+
 @api_view(["POST"])
 def verify_payment(request):
 
