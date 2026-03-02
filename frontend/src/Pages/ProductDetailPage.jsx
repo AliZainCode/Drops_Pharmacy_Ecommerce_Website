@@ -3,7 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import NavMenu from "../Components/Nav";
 import Footer from "../Components/FooterSection";
 import { CartContext } from "../context/CartContext";
-import { API } from "../services/api";
+// import { API } from "../services/api";
 
 function ProductDetailPage() {
   const { slug } = useParams();
@@ -22,7 +22,7 @@ function ProductDetailPage() {
       .then((data) => {
         setProduct(data);
 
-        fetch(`${API}/home/`)
+        fetch("http://127.0.0.1:8002/api/home/")
           .then((res) => res.json())
           .then((allProducts) => {
             let related = allProducts.filter(

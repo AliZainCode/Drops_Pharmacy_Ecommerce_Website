@@ -1,7 +1,6 @@
 import { useEffect, useState, useRef } from "react";
 import { ArrowRight } from "lucide-react";
 import { Link } from "react-router-dom";
-import { API } from "../services/api";
 
 function HomePage() {
   const [categories, setCategories] = useState([]);
@@ -11,11 +10,11 @@ function HomePage() {
   const [catTotalPages, setCatTotalPages] = useState(1);
 
   useEffect(() => {
-     fetch(`${API}/collections/`)
+     fetch("http://127.0.0.1:8002/api/collections/")
        .then((res) => res.json())
        .then((data) => setCategories(data));
 
-    fetch(`${API}/brands/`)
+    fetch("http://127.0.0.1:8002/api/brands/")
       .then((res) => res.json())
       .then((data) => setBrands(data));
   }, []);
