@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
-import { API } from "../services/api";
 
 function PaymentSuccess() {
   const [params] = useSearchParams();
@@ -18,7 +17,7 @@ function PaymentSuccess() {
 
       try {
         const res = await fetch(
-          `${API}/payment/verify-payment/`,
+          `${import.meta.env.VITE_API_URL}/api/payment/verify-payment/`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

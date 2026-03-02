@@ -1,6 +1,5 @@
 import { useEffect, useState } from "react";
 import { Globe } from "lucide-react";
-import { API } from "../services/api";
 
 export default function Footer() {
   const [data, setData] = useState(null);
@@ -10,10 +9,10 @@ export default function Footer() {
       try {
         const [branchesRes, contactsRes, downloadsRes, paymentsRes] =
           await Promise.all([
-            fetch(`${API}/branches/`),
-            fetch(`${API}/contacts/`),
-            fetch(`${API}/downloads/`),
-            fetch(`${API}/payments/`),
+            fetch(`${import.meta.env.VITE_API_URL}/api/branches/`),
+            fetch(`${import.meta.env.VITE_API_URL}/api/contacts/`),
+            fetch(`${import.meta.env.VITE_API_URL}/api/downloads/`),
+            fetch(`${import.meta.env.VITE_API_URL}/api/payments/`),
           ]);
 
         const branchesData = await branchesRes.json();

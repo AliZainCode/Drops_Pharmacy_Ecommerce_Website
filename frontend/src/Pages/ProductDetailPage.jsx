@@ -13,7 +13,7 @@ function ProductDetailPage() {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8002/api/product/${slug}/`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/product/${slug}/`)
       .then((res) => {
         if (!res.ok) throw new Error("Product not found");
         return res.json();
@@ -21,7 +21,7 @@ function ProductDetailPage() {
       .then((data) => {
         setProduct(data);
 
-        fetch("http://127.0.0.1:8002/api/home/")
+        fetch(`${import.meta.env.VITE_API_URL}/api/home/`)
           .then((res) => res.json())
           .then((allProducts) => {
             let related = allProducts.filter(

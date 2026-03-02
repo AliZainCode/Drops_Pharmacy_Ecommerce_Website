@@ -2,7 +2,6 @@ import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { CartContext } from "../context/CartContext";
 import NavMenu from "../Components/Nav";
-import { API } from "../services/api";
 import Footer from "../Components/FooterSection";
 import { useNavigate } from "react-router-dom";
 
@@ -44,7 +43,7 @@ function CartPage() {
   const handleCheckout = async () => {
     try {
       const response = await fetch(
-        `${API}/payment/create-checkout-session/`,
+        `${import.meta.env.VITE_API_URL}/api/payment/create-checkout-session/`,
         {
           method: "POST",
           headers: {

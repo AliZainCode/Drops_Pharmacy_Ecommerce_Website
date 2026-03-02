@@ -10,11 +10,11 @@ function HomePage() {
   const [catTotalPages, setCatTotalPages] = useState(1);
 
   useEffect(() => {
-     fetch("http://127.0.0.1:8002/api/collections/")
+     fetch(`${import.meta.env.VITE_API_URL}/api/collections/`)
        .then((res) => res.json())
        .then((data) => setCategories(data));
 
-    fetch("http://127.0.0.1:8002/api/brands/")
+    fetch(`${import.meta.env.VITE_API_URL}/api/brands/`)
       .then((res) => res.json())
       .then((data) => setBrands(data));
   }, []);

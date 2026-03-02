@@ -2,7 +2,6 @@ import { useState, useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import NavMenu from "../Components/Nav";
 import Footer from "../Components/FooterSection";
-import { API } from "../services/api";
 
 function CheckoutPage() {
   const { cart, clearCart } = useContext(CartContext);
@@ -27,7 +26,7 @@ function CheckoutPage() {
     }
 
     if (form.paymentMethod === "cod") {
-      const res = await fetch(`${API}/payment/cod-order/`, {
+      const res = await fetch(`${import.meta.env.VITE_API_URL}/api/payment/cod-order/`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
@@ -45,7 +44,7 @@ function CheckoutPage() {
     }
     if (form.paymentMethod === "stripe") {
       const res = await fetch(
-        "http://127.0.0.1:8002/api/payment/create-checkout-session/",
+        `${import.meta.env.VITE_API_URL}/api/payment/create-checkout-session/`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

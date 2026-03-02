@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react";
-import { API } from "../services/api";
 
 
 function HeroSection() {
@@ -9,7 +8,7 @@ function HeroSection() {
   useEffect(() => {
     const fetchHeroImages = async () => {
       try {
-        const res = await fetch(`${API}/hero/`);
+        const res = await fetch(`${import.meta.env.VITE_API_URL}/api/hero/`);
         const data = await res.json();
         setImages(data);
       } catch (error) {

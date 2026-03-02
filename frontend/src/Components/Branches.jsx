@@ -1,7 +1,5 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import { API } from "../services/api";
-
 
 function BranchSlider({ isSearching }) {
   const [branches, setBranches] = useState([]);
@@ -9,7 +7,7 @@ function BranchSlider({ isSearching }) {
   const [fade, setFade] = useState(true);
 
   useEffect(() => {
-    fetch(`${API}/branch-slider/`)
+    fetch(`${import.meta.env.VITE_API_URL}/api/branch-slider/`)
       .then((res) => res.json())
       .then((data) => {
         console.log(data);
