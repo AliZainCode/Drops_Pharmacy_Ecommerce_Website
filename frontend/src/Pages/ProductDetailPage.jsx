@@ -22,7 +22,7 @@ function ProductDetailPage() {
       .then((data) => {
         setProduct(data);
 
-        fetch("${API}/home/")
+        fetch(`${API}/home/`)
           .then((res) => res.json())
           .then((allProducts) => {
             let related = allProducts.filter(
