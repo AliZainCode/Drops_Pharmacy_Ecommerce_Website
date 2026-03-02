@@ -5,7 +5,7 @@ import NavMenu from "../Components/Nav";
 import Footer from "../Components/FooterSection";
 import Searchbar from "../Components/Searchbar";
 import { useCart } from "../context/CartContext";
-import { API } from "../services/api";
+const API_BASE = import.meta.env.VITE_API_URL;
 
 function ProductsPage({ filterCategory }) {
   const { brandName } = useParams();
@@ -37,7 +37,7 @@ function ProductsPage({ filterCategory }) {
 
 
   useEffect(() => {
-    fetch(`${API}/home/`)
+    fetch("http://127.0.0.1:8002/api/home/")
       .then((res) => {
         if (!res.ok) throw new Error("Backend not found");
         return res.json();
