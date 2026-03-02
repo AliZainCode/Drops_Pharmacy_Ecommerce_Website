@@ -13,7 +13,7 @@ SECRET_KEY = os.getenv("SECRET_KEY")
 
 DEBUG = os.getenv("DEBUG") == "True"
 
-ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS").split(",")
+ALLOWED_HOSTS = os.getenv("ALLOWED_HOSTS", "").split(",")
 
 
 # APPLICATIONS
@@ -126,6 +126,7 @@ STATIC_URL = "static/"
 # CORS
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
+    "https://dropspharmc.netlify.app",
 ]
 
 
@@ -135,3 +136,8 @@ STRIPE_SECRET_KEY = os.getenv("STRIPE_SECRET_KEY")
 
 # DEFAULT PRIMARY KEY
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+CSRF_TRUSTED_ORIGINS = [
+    "https://dropspharmc.netlify.app",
+]
+STATIC_ROOT = os.path.join(BASE_DIR, "staticfiles")
