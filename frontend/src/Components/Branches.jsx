@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
+
 function BranchSlider({ isSearching }) {
   const [branches, setBranches] = useState([]);
   const [current, setCurrent] = useState(0);
