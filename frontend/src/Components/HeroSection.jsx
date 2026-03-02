@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import { API } from "../services/api";
 
 
 function HeroSection() {
@@ -8,7 +9,7 @@ function HeroSection() {
   useEffect(() => {
     const fetchHeroImages = async () => {
       try {
-        const res = await fetch("http://127.0.0.1:8002/api/hero/");
+        const res = await fetch(`${API}/hero/`);
         const data = await res.json();
         setImages(data);
       } catch (error) {

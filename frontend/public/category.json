@@ -1,0 +1,65 @@
+[
+  {
+    "id": 1,
+    "name": "Sale",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/Discount-Percent-PNG-Isolated-Pic.png?v=1745398099",
+    "category": "sale"
+  },
+  {
+    "id": 2,
+    "name": "Mom & Baby Care",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/Screen_Shot_2020-07-01_at_20.00.48_494f43ab-0cb4-4715-96c6-6db573f10214.webp?v=1745395069",
+    "category": "Kids Health"
+  },
+  {
+    "id": 3,
+    "name": "Skin Care",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/istockphoto-1352840704-612x612.webp?v=1747048685",
+    "category": "skin care"
+  },
+  {
+    "id": 4,
+    "name": "Hair Care",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/haircare-routine-for-hair.webp?v=1745394824",
+    "category": "hair care"
+  },
+  {
+    "id": 5,
+    "name": "Medicine",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/221205091646-winter-cold-stock.webp?v=1745395014",
+    "category": "medicine"
+  },
+  {
+    "id": 6,
+    "name": "Personal Care",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/Cosmetics-2-1024x683.webp?v=1747041968",
+    "category": "personal care"
+  },
+  {
+    "id": 7,
+    "name": "Supplements",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/skin_-nails-and-hair_2e58b732-cca5-41c4-8b92-a58e0e6aa0f6.webp?v=1745394946&width=1000",
+    "category": "supplements"
+  },
+  {
+    "id": 8,
+    "name": "Medical Devices",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/wrist-blood-pressure-monitor-5-years-warranty-bc-32-beurer-original-imahfrvp6sufngmx_f8484dd7-f158-429a-af5f-7a3aee132837.webp?v=1745394603",
+    "category": "medical devices"
+  },
+  {
+    "id": 9,
+    "name": "Medical Support",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/9156542529566_74431762-04a2-4d8a-a092-81c6ed402bc3.webp?v=1745394734",
+    "category": "medical support"
+  },
+  {
+    "id": 10,
+    "name": "Oral Care",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/brush-teeth-ellicot-city-dentistry-640w_0f591e12-9018-4cbe-a5e7-f39a1d9662ce.webp?v=1745394466",
+    "category": "oral care"
+
+  }
+
+
+]

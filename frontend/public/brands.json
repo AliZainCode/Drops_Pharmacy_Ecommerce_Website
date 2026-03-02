@@ -1,0 +1,206 @@
+[
+  {
+    "id": 1,
+    "name": "Aptamil",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/aptamil-eu-icon.png?v=1733999207",
+    "category": "baby"
+  },
+  {
+    "id": 2,
+    "name": "Bebelac",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/1630630661022.jpg?v=1738223318",
+    "category": "baby"
+  },
+  {
+    "id": 3,
+    "name": "Blemil Plus",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_775ec7d0-c57d-460a-87eb-870b171241b9.png?v=1738222975",
+    "category": "baby"
+  },
+  {
+    "id": 4,
+    "name": "Cerelac",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_da6dff67-5827-4260-aee1-8b086a60e4cc.png?v=1738223171",
+    "category": "baby"
+  },
+  {
+    "id": 5,
+    "name": "Huggies",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/1971809.png?v=1738223405",
+    "category": "baby"
+  },
+  {
+    "id": 6,
+    "name": "Humana",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/humana.jpg?v=1738223481",
+    "category": "baby"
+  },
+  {
+    "id": 7,
+    "name": "Kabrita",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/Kabrita-logo_25b42014-89e0-4cf4-aafe-dedfc3686b5f.webp?v=1738218969",
+    "category": "baby"
+  },
+  {
+    "id": 8,
+    "name": "Nan",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/945e92d5284fb75c86ea31b310b9f8d96bee4d4a.png?v=1733998642",
+    "category": "baby"
+  },
+  {
+    "id": 9,
+    "name": "Novalac",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/Novalac--logo_1625823157.png?v=1738222754",
+    "category": "baby"
+  },
+  {
+    "id": 10,
+    "name": "Pampers",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_a61713c1-b692-4fc3-8287-96f4118c0333.png?v=1738222667",
+    "category": "baby"
+  },
+  {
+    "id": 11,
+    "name": "Pediasure",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/dd3755209280451.Y3JvcCwxMzgwLDEwODAsMjcwLDA.png?v=1738223256",
+    "category": "baby"
+  },
+  {
+    "id": 12,
+    "name": "S-26",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/resources.commerceup.jpg?v=1733998845",
+    "category": "baby"
+  },
+  {
+    "id": 13,
+    "name": "Beauty of Jaseon",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/logo_1200x1200_3136cc44-5c71-4b49-8769-bbbbd172d91a.jpg?v=1738222306",
+    "category": "skin care"
+  },
+  {
+    "id": 14,
+    "name": "Beesline",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_27caf082-c3cb-4bc9-b432-dbd09a38c194.jpg?v=1738220351",
+    "category": "skin care"
+  },
+  {
+    "id": 15,
+    "name": "Bepanthen",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_3788c513-2eeb-4eed-98b6-9987fd407f1d.png?v=1738221831",
+    "category": "skin care"
+  },
+  {
+    "id": 16,
+    "name": "Bioderma",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/2rt51WvjSU5debLciqaI2n53XuJqfLxGUe6W62Ga.jpg?v=1733992048&width=1000",
+    "category": "skin care"
+  },
+  {
+    "id": 17,
+    "name": "Cerave",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/01dfadb784cdcd91ebb730d30592b481.jpg?v=1736856308",
+    "category": "skin care"
+  },
+  {
+    "id": 18,
+    "name": "QV",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_821d1886-f489-4350-9019-ac5905ccd27e.png?v=1746695142",
+    "category": "skin care"
+  },
+  {
+    "id": 19,
+    "name": "Cetaphil",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/f8230bb4b28d313045d36cc97cd1c9ff.webp?v=1733992289",
+    "category": "skin care"
+  },
+  {
+    "id": 20,
+    "name": "Cosrx",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/CosRX_Logo_1200x1200_bffd4172-eeae-46a1-a848-d3eb0aca94b0.webp?v=1738221993",
+    "category": "skin care"
+  },
+  {
+    "id": 21,
+    "name": "Eucerin",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/eucerin-logo.jpg?v=1738219065",
+    "category": "skin care"
+  },
+  {
+    "id": 22,
+    "name": "Fillerina",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/72334c6060139d4a89bed8ac4795b3f1.w1667.h1667.jpg?v=1738222227&width=1000",
+    "category": "skin care"
+  },
+  {
+    "id": 23,
+    "name": "Isdin",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/D_Q_NP_642389-MLU75358480487_032024-O.webp?v=1733999711",
+    "category": "skin care"
+  },
+  {
+    "id": 24,
+    "name": "La Roche",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/c9c88251-c918-4d11-9f44-7c80401db533-La_Roche-Posay_Logo_1000x1000_ffb42b3c-0440-4a41-b606-8b7dffe3c9f3.png?v=1733992124&width=1000",
+    "category": "skin care"
+  },
+  {
+    "id": 25,
+    "name": "Rexsol",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/NEWRexsol-usa-logo21.jpg?v=1738222131",
+    "category": "skin care"
+  },
+  {
+    "id": 26,
+    "name": "Vichy",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/Vichy-Laboratoires-Logo-400x400.webp?v=1736856392",
+    "category": "Skin Care"
+  },
+  {
+    "id": 27,
+    "name": "Now",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/NOW_Logo_Spot.jpg?v=1733998505",
+    "category": "wellness"
+  },
+  {
+    "id": 28,
+    "name": "Puriti Manuka",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/puriti-gift-card-449253_600x_5d3ee4b1-9bba-4b2f-8851-19e1a9216fc8.webp?v=1745393108",
+    "category": "wellness"
+  },
+  {
+    "id": 29,
+    "name": "Solgar",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/solgar.jpg?v=1733999467",
+    "category": "wellness"
+  },
+  {
+    "id": 30,
+    "name": "Wellness Way",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/3.png?v=1734000345&width=1500",
+    "category": "wellness"
+  },
+  {
+    "id": 31,
+    "name": "Webber Naturals",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/png-transparent-webber-naturals-hd-logo.png?v=1738224895",
+    "category": "wellness"
+  },
+  {
+    "id": 32,
+    "name": "AMS",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_afc3384d-bf76-4e64-9de3-a5f5f8949af1.png?v=1738224320",
+    "category": "wellness"
+  },
+  {
+    "id": 33,
+    "name": "Organic Zone",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_a233c3ea-6634-4214-b44d-a25e8a4897e6.jpg?v=1738224221",
+    "category": "wellness"
+  },
+  {
+    "id": 34,
+    "name": "Vitabiotics",
+    "image": "https://www.dropspharmacy.com/cdn/shop/collections/images_e3d083a4-85a5-49a9-a210-c10c0edd4ff4.png?v=1738224053",
+    "category": "wellness"
+  }
+]

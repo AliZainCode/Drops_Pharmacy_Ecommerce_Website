@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Al Yahar Branch",
+    "phone": "0502717470"
+  },
+  {
+    "id": 2,
+    "name": "Al Ain Branch",
+    "phone": "0501234567"
+  },
+  {
+    "id": 3,
+    "name": "Dubai Branch",
+    "phone": "0509876543"
+  },
+  {
+    "id": 4,
+    "name": "Abu Dhabi Branch",
+    "phone": "0505432198"
+  },
+  {
+    "id": 5,
+    "name": "Sharjah Branch",
+    "phone": "0501122334"
+  },
+  {
+    "id": 6,
+    "name": "Ajman Branch",
+    "phone": "0506677889"
+  },
+  {
+    "id": 7,
+    "name": "Ras Al Khaimah Branch",
+    "phone": "0504455667"
+  }
+]

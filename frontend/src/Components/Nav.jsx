@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router-dom"; // ✅ use Link
+import { Link } from "react-router-dom";
 import Searchbar from "./Searchbar";
 import BranchSlider from "./Branches";
 import SideMenu from "./MenuSection";

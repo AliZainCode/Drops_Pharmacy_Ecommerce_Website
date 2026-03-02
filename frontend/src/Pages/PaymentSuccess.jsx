@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { useSearchParams, useNavigate } from "react-router-dom";
+import { API } from "../services/api";
 
 function PaymentSuccess() {
   const [params] = useSearchParams();
@@ -17,7 +18,7 @@ function PaymentSuccess() {
 
       try {
         const res = await fetch(
-          "http://127.0.0.1:8002/api/payment/verify-payment/",
+          `${API}/payment/verify-payment/`,
           {
             method: "POST",
             headers: { "Content-Type": "application/json" },

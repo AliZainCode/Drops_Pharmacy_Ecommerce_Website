@@ -1,0 +1,56 @@
+{
+  "branches": {
+    "abuDhabi": [
+      { "name": "Khalifa Branch", "phone": "0504776404" },
+      { "name": "MBZ12 Branch", "phone": "0504775480" },
+      { "name": "MBZ3 Branch", "phone": "0504776719" },
+      { "name": "Zahiya Branch", "phone": "0508849846" }
+    ],
+    "alAin": [
+      { "name": "Al Towayya Branch", "phone": "0504776182" },
+      { "name": "Al Nimah Branch", "phone": "0545833039" },
+      { "name": "Al Yaher Branch", "phone": "0502717470" },
+      { "name": "Drops Para Pharmacy Coming Soon", "phone": "" }
+    ]
+  },
+  "contacts": [
+    {
+      "label": "purchase@dropspharmacy.com",
+      "link": "mailto:purchase@dropspharmacy.com"
+    },
+    {
+      "label": "careers@dropspharmacy.com",
+      "link": "mailto:careers@dropspharmacy.com"
+    },
+    {
+      "label": "ecommerce@dropspharmacy.com",
+      "link": "mailto:ecommerce@dropspharmacy.com"
+    }
+  ],
+  "downloads": [
+    {
+      "label": "Google Play",
+      "img": "https://cdn.shopify.com/extensions/8606d5d4-6572-4cac-aeba-c696b9c8de55/apptile-mobile-app-builder-69/assets/playstore_white_text.svg"
+    },
+    {
+      "label": "App Store",
+      "img": "https://cdn.shopify.com/extensions/8606d5d4-6572-4cac-aeba-c696b9c8de55/apptile-mobile-app-builder-69/assets/appstore_white_text.svg"
+    }
+  ],
+  "payments": [
+    {
+      "alt": "American Express",
+      "img": "https://img.icons8.com/color/48/american-express-squared.png"
+    },
+    { "alt": "Visa", "img": "https://img.icons8.com/ios/50/visa.png" },
+    { "alt": "JCB", "img": "https://img.icons8.com/color/48/jcb.png" },
+    {
+      "alt": "Apple Pay",
+      "img": "https://img.icons8.com/ios/50/apple-pay.png"
+    },
+    {
+      "alt": "Google Pay",
+      "img": "https://img.icons8.com/nolan/64/google-pay.png"
+    }
+  ]
+}

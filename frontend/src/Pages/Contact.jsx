@@ -1,13 +1,14 @@
 import { useEffect, useState } from "react";
 import NavMenu from "../Components/Nav";
 import Footer from "../Components/FooterSection";
+import { API } from "../services/api";
 
 
 export default function ContactPage() {
   const [banner, setBanner] = useState(null);
 
   useEffect(() => {
-    fetch("http://127.0.0.1:8002/api/contact-banner/")
+    fetch(`${API}/contact-banner/`)
       .then((res) => res.json())
       .then((data) => {
         const contactBanner = data.find((item) => item.category === "contact");
