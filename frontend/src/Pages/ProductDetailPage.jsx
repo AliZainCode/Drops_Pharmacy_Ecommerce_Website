@@ -3,6 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import NavMenu from "../Components/Nav";
 import Footer from "../Components/FooterSection";
 import { CartContext } from "../context/CartContext";
+import { API } from "../services/api";
 
 function ProductDetailPage() {
   const { slug } = useParams();
@@ -13,7 +14,7 @@ function ProductDetailPage() {
   const { addToCart } = useContext(CartContext);
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:8002/api/product/${slug}/`)
+    fetch(`${API}/product/${slug}/`)
       .then((res) => {
         if (!res.ok) throw new Error("Product not found");
         return res.json();
@@ -21,7 +22,7 @@ function ProductDetailPage() {
       .then((data) => {
         setProduct(data);
 
-        fetch("http://127.0.0.1:8002/api/home/")
+        fetch("${API}/home/")
           .then((res) => res.json())
           .then((allProducts) => {
             let related = allProducts.filter(
